@@ -50,11 +50,21 @@
    * main configuration for component dependency resolution.
    **/
   "teambit.dependencies/dependency-resolver": {
-    "rootComponents": true,
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@bitdev/harmony.harmony-platform": "^2.0.8",
+        "@bitdev/harmony.runtimes.browser-runtime": "^0.0.49",
+        "@bitdev/harmony.runtimes.nodejs-runtime": "^1.0.76",
+        "@bitdev/symphony.deployers.kubernetes": "^1.0.11",
+        "@bitdev/symphony.envs.symphony-env": "^2.0.1",
+        "@bitdev/symphony.symphony-platform": "^1.0.13",
+        "@pied/people.people": "^2.0.0",
+        "@pied/pied-piper.pied-platform": "^2.0.1"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true

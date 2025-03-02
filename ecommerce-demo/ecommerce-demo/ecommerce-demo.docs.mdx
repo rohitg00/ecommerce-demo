@@ -1,0 +1,40 @@
+---
+labels: ['ecommerce-demo', 'harmony', 'platform']
+description: 'A EcommerceDemo Harmony platform.'
+---
+
+The Pied Piper platform composition. Composes the Pied Piper platform features into a unified and executable platform.
+
+## Run the platform
+
+Run the Pied Piper platform by running the following commands:
+
+```bash
+bit use ecommerce-demo
+``` 
+
+Run the platform:
+
+```bash
+bit run ecommerce-demo
+```
+
+Your platform is now listening to url shown in the command output.
+
+## Compose aspects
+
+You can create and compose new Aspects to the Pied Piper platform by adding them to the `aspects` property in `ecommerce-demo.bit-app.ts`:
+
+```ts
+import { NewsAspect } from '@pied/news.news';
+
+export const EcommerceDemo = HarmonyPlatform.from({
+  name: 'ecommerce-demo',
+
+  aspects: [
+    HeaderAspect,
+    // your new platform feature.
+    NewsAspect,
+  ],
+});
+```

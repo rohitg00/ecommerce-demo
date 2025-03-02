@@ -9,5 +9,50 @@
  */
 
 {
+    "cart": {
+        "name": "cart",
+        "scope": "",
+        "version": "",
+        "defaultScope": "dras.ecommerce-demo",
+        "mainFile": "index.ts",
+        "rootDir": "ecommerce-demo/cart",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@3.0.5": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
+        }
+    },
+    "ecommerce-demo": {
+        "name": "ecommerce-demo",
+        "scope": "",
+        "version": "",
+        "defaultScope": "dras.ecommerce-demo",
+        "mainFile": "index.ts",
+        "rootDir": "ecommerce-demo/ecommerce-demo",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@2.0.1": {},
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {}
+            },
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            },
+            "teambit.component/dev-files": {},
+            "teambit.harmony/application": {},
+            "teambit.preview/preview": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.pipelines/builder": {},
+            "teambit.semantics/schema": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "pied.pied-piper",
+                    "name": "pied-piper",
+                    "version": "2.0.2"
+                }
+            }
+        }
+    },
     "$schema-version": "17.0.0"
 }
