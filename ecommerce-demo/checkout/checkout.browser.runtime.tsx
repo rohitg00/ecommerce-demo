@@ -3,11 +3,11 @@ import type { CheckoutConfig } from './checkout-config.js';
 import { Order, OrderSlot, CartItem } from './order.js';
 import { SymphonyPlatformAspect, SymphonyPlatformBrowser } from '@bitdev/symphony.symphony-platform';
 import { PiedPlatformAspect, PiedPlatformBrowser } from '@pied/pied-piper.pied-platform';
-import { ProductsAspect } from '../products/products.aspect.js';
-import { UserAspect } from '../user/user.aspect.js';
-import type { ProductsBrowser } from '../products/products.browser.runtime.js';
-import type { UserBrowser } from '../user/user.browser.runtime.js';
-import type { Address } from '../user/user-model.js';
+import { ProductsAspect } from '@dras/ecommerce-demo.products';
+import { UserAspect } from '@dras/ecommerce-demo.user';
+import type { ProductsBrowser } from '@dras/ecommerce-demo.products';
+import type { UserBrowser } from '@dras/ecommerce-demo.user';
+import type { Address } from '@dras/ecommerce-demo.user';
 
 // Cart component
 const Cart = ({ items, onUpdateQuantity, onRemoveItem, onCheckout }: { 

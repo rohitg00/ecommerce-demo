@@ -1,10 +1,10 @@
 import type { CheckoutConfig } from './checkout-config.js';
 import { Order, OrderSlot, CartItem } from './order.js';
 import { SymphonyPlatformAspect, SymphonyPlatformNode } from '@bitdev/symphony.symphony-platform';
-import { ProductsAspect } from '../products/products.aspect.js';
-import { UserAspect } from '../user/user.aspect.js';
-import type { ProductsNode } from '../products/products.node.runtime.js';
-import type { UserNode } from '../user/user.node.runtime.js';
+import { ProductsAspect } from '@dras/ecommerce-demo.products';
+import { UserAspect } from '@dras/ecommerce-demo.user';
+import type { ProductsNode } from '@dras/ecommerce-demo.products';
+import type { UserNode } from '@dras/ecommerce-demo.user';
 
 export class CheckoutNode {
   private orders: Map<string, Order> = new Map();
