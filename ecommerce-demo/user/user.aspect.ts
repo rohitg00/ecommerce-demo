@@ -4,4 +4,5 @@ export const UserAspect = Aspect.create({
   id: 'dras.ecommerce-demo/user'
 });
 
-export default UserAspect; 
+export default UserAspect;
+    

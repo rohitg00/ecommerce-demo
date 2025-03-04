@@ -1,4 +1,3 @@
-import React from 'react';
 import type { CartConfig } from './cart-config.js';
 import { MenuItem, MenuItemSlot } from './menu-item.js';
 import { SymphonyPlatformAspect, SymphonyPlatformBrowser } from '@bitdev/symphony.symphony-platform';

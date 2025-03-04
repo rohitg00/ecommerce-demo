@@ -29,7 +29,13 @@
         "version": "",
         "defaultScope": "dras.ecommerce-demo",
         "mainFile": "index.ts",
-        "rootDir": "ecommerce-demo/checkout"
+        "rootDir": "ecommerce-demo/checkout",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@3.0.5": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
+        }
     },
     "ecommerce-demo": {
         "name": "ecommerce-demo",
@@ -62,13 +68,19 @@
             }
         }
     },
-    "products": {
-        "name": "products",
+    "product": {
+        "name": "product",
         "scope": "",
         "version": "",
         "defaultScope": "dras.ecommerce-demo",
         "mainFile": "index.ts",
-        "rootDir": "ecommerce-demo/products"
+        "rootDir": "ecommerce-demo/product",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@3.0.5": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
+        }
     },
     "user": {
         "name": "user",
@@ -76,7 +88,13 @@
         "version": "",
         "defaultScope": "dras.ecommerce-demo",
         "mainFile": "index.ts",
-        "rootDir": "ecommerce-demo/user"
+        "rootDir": "ecommerce-demo/user",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@3.0.5": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
+        }
     },
     "$schema-version": "17.0.0"
 }

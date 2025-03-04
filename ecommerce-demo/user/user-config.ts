@@ -1,7 +1,10 @@
-// use this type for the User aspect config.
+// use this type for your aspect config.
 export type UserConfig = {
-  // Enable or disable user registration
-  enableRegistration?: boolean;
   // Session timeout in minutes
-  sessionTimeoutMinutes?: number;
-}; 
+  sessionTimeout?: number;
+  // Enable or disable guest checkout
+  allowGuestCheckout?: boolean;
+  // Require email verification
+  requireEmailVerification?: boolean;
+};
+

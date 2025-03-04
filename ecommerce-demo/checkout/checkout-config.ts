@@ -1,11 +1,10 @@
-// use this type for the Checkout aspect config.
+// use this type for your aspect config.
 export type CheckoutConfig = {
-  // Enable or disable shipping
-  enableShipping?: boolean;
-  // Enable or disable payment processing
-  enablePayment?: boolean;
-  // Tax rate percentage
-  taxRate?: number;
   // Available payment methods
-  availablePaymentMethods?: string[];
-}; 
+  paymentMethods?: string[];
+  // Default shipping method
+  defaultShippingMethod?: string;
+  // Enable order tracking
+  enableOrderTracking?: boolean;
+};
+
