@@ -1,6 +1,6 @@
 import type { SlotRegistry } from '@bitdev/harmony.harmony';
-import type { Product } from '../products/product.js';
-import type { Address } from '../user/user-model.js';
+import type { Product } from '@dras/ecommerce-demo.products';
+import type { Address } from '@dras/ecommerce-demo.user';
 
 export interface CartItem {
   /**

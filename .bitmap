@@ -23,6 +23,14 @@
             }
         }
     },
+    "checkout": {
+        "name": "checkout",
+        "scope": "",
+        "version": "",
+        "defaultScope": "dras.ecommerce-demo",
+        "mainFile": "index.ts",
+        "rootDir": "ecommerce-demo/checkout"
+    },
     "ecommerce-demo": {
         "name": "ecommerce-demo",
         "scope": "",
@@ -53,6 +61,22 @@
                 }
             }
         }
+    },
+    "products": {
+        "name": "products",
+        "scope": "",
+        "version": "",
+        "defaultScope": "dras.ecommerce-demo",
+        "mainFile": "index.ts",
+        "rootDir": "ecommerce-demo/products"
+    },
+    "user": {
+        "name": "user",
+        "scope": "",
+        "version": "",
+        "defaultScope": "dras.ecommerce-demo",
+        "mainFile": "index.ts",
+        "rootDir": "ecommerce-demo/user"
     },
     "$schema-version": "17.0.0"
 }
