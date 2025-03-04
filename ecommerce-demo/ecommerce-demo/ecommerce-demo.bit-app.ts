@@ -6,6 +6,9 @@ import { SymphonyPlatformAspect } from '@bitdev/symphony.symphony-platform';
 import { PeopleAspect } from '@pied/people.people';
 import { PiedPlatformAspect } from '@pied/pied-piper.pied-platform'; 
 import { CartAspect } from '@dras/ecommerce-demo.cart';
+import { ProductsAspect } from '@dras/ecommerce-demo.products';
+import { UserAspect } from '@dras/ecommerce-demo.user';
+import { CheckoutAspect } from '@dras/ecommerce-demo.checkout';
 /**
   * compose the ecommerce-demo platform.
   */    
@@ -13,7 +16,7 @@ export const EcommerceDemo = HarmonyPlatform.from({
   name: 'ecommerce-demo',
   platform: [SymphonyPlatformAspect, {
     name: 'Ecommerce Demo',
-    slogan: 'Ecommerce Demo',
+    slogan: 'A modern e-commerce platform built with Bit',
     domain: 'ecommerce-demo.teambit.games',
     logo: 'https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png',
   }],
@@ -24,10 +27,16 @@ export const EcommerceDemo = HarmonyPlatform.from({
   ],
 
   aspects: [
-    // feature to compose into the platofrm.
+    // Core platform aspects
     PeopleAspect,
     PiedPlatformAspect,
+    
+    // E-commerce specific aspects
     CartAspect,
+    ProductsAspect,
+    UserAspect,
+    CheckoutAspect,
+    
     // To deploy the platform on a Kubernetes cluster, use the official Kubernetes deployer 
     // for Harmony. @see https://bit.cloud/bitdev/symphony/deployers/kubernetes
   //   [KubernetesAspect, {
