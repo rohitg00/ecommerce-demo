@@ -1,14 +1,13 @@
-import React from 'react';
+import {
+  SymphonyPlatformAspect,
+  SymphonyPlatformBrowser,
+} from '@bitdev/symphony.symphony-platform';
 import type { CartConfig } from './cart-config.js';
 import { MenuItem, MenuItemSlot } from './menu-item.js';
-import { SymphonyPlatformAspect, SymphonyPlatformBrowser } from '@bitdev/symphony.symphony-platform';
 
 export class CartBrowser {
-  constructor(
-    private config: CartConfig,
-    private menuItemSlot: MenuItemSlot,
-  ) {}
-  
+  constructor(private config: CartConfig, private menuItemSlot: MenuItemSlot) {}
+
   /**
    * register a list of menu item.
    */
@@ -24,16 +23,17 @@ export class CartBrowser {
     return this.menuItemSlot.flatValues();
   }
 
-  static dependencies = [ SymphonyPlatformAspect ];
+  static dependencies = [SymphonyPlatformAspect];
 
   static defaultConfig: CartConfig = {};
+
   static async provider(
-    [ symphonyPlatform ]: [ SymphonyPlatformBrowser ],
+    [symphonyPlatform]: [SymphonyPlatformBrowser],
     config: CartConfig,
     [menuItemSlot]: [MenuItemSlot]
   ) {
     const cart = new CartBrowser(config, menuItemSlot);
-    
+
     return cart;
   }
 }

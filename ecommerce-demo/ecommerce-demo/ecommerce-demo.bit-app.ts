@@ -6,7 +6,7 @@ import { SymphonyPlatformAspect } from '@bitdev/symphony.symphony-platform';
 import { PeopleAspect } from '@pied/people.people';
 import { PiedPlatformAspect } from '@pied/pied-piper.pied-platform'; 
 import { CartAspect } from '@dras/ecommerce-demo.cart';
-import { ProductsAspect } from '@dras/ecommerce-demo.products';
+import { ProductAspect } from '@dras/ecommerce-demo.product';
 import { UserAspect } from '@dras/ecommerce-demo.user';
 import { CheckoutAspect } from '@dras/ecommerce-demo.checkout';
 /**
@@ -33,7 +33,7 @@ export const EcommerceDemo = HarmonyPlatform.from({
     
     // E-commerce specific aspects
     CartAspect,
-    ProductsAspect,
+    ProductAspect,
     UserAspect,
     CheckoutAspect,
     

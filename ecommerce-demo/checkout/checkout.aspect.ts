@@ -4,4 +4,5 @@ export const CheckoutAspect = Aspect.create({
   id: 'dras.ecommerce-demo/checkout'
 });
 
-export default CheckoutAspect; 
+export default CheckoutAspect;
+    
